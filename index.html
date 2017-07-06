@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>primera aplicacion</title>
+
+    <!--grupo CSS-->
+    <link rel="stylesheet" href="css/tema2.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/acciones.js"></script>
+    <script src="phonegap.js"></script>
+    
+    <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+    <style>
+	#b1
+	{ float:right;}
+	#b2
+	{ float:right;}
+	</style>
+</head><body onLoad="MM_preloadImages('imagenes/descarga.jpg','imagenes/descarga (1).jpg','imagenes/descarga (3).jpg','imagenes/caballo.jpg','imagenes/delfina.jpg','imagenes/lobos.jpg','imagenes/llamas.jpg','imagenes/orca1.jpg','imagenes/orca.jpg','imagenes/tiburon1.jpg')">
+
+      <div data-role="page" id="Principal" data-theme="a">
+         <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+           <h1><p>Animales</p> 
+           <p>CBTis16</p></h1>
+          </div>
+          
+                <div data-role="main" class="ui-content">   
+<div>
+        <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+        <li class="ui-first-child ui-last-child">
+            <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                 <h2>Animales Terrestres</h2>
+
+          </a>
+</li>
+         <li class="ui-first-child ui ui-last-child">
+            <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>Animales Acuaticos</h2>
+
+           </a>
+</li>
+      
+            <li class="ui-fist-child ui-last-child">
+                <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                   <h2>Imagenes de animales terrestres</h2>
+
+                </a>
+            </li>
+            
+             <li class="ui-fist-child ui-last-child">
+                <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                   <h2>Imagenes de animales marinos</h2>
+
+                </a>
+            </li>
+            <center>
+       <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://es.wikipedia.org/wiki/Animal_terrestre" data-role="button" id="beep" target="_self">
+    <h2>Animales Terrestres</h2>
+   </a>
+  </li>
+
+  <li class="ui-first-child ui-last-child">
+   <a href="https://es.wikipedia.org/wiki/Animales_acu%C3%A1ticos" data-role="button" id="beep" target="_self">
+    <h2>Animales Marinos</h2>
+   </a>
+  </li>
+</ul>
+</div>
+</center>
+            </ul>
+            
+            
+            
+</div>
+          </div>
+          
+         
+<div data-role="collapsible" data-content-theme="false">
+             <h1>Datos del Desarrollador</h1>
+             <div>
+             <center>
+              <h2>Sebastian Rodrigiuez Cabrera</h2>
+              <h2>Programacion(Desarrollo de Aplicaciones Moviles)</h2>
+              <h3>Recursamiento</h3>
+              <h3>sebas1911@live.com.mx</h3>
+              <h2>Funciones</h2>
+              <p>Esta Aplicacion te mostrara los tipos de animales</p>
+              <h2>Docente</h2>
+              <h3>Lic.Jose Antonio Gomez Hernandez</h3>
+              <br>
+              
+              </center>
+              <div style="width:60%;">
+              <div id="b1">
+              <a href="https://www.facebook.com/sebastian.rodrigezcabrera" class="ui-btn ui-btn-corner-all ui-btn-inline" data-theme="a">
+              Abre Feis</a>
+              </div>
+              <div id="b2">
+              <a href="https://damcbtis16.milaulas.com/" class="ui-btn ui-btn-corner-all ui-btn-inline" data-theme="a">  
+              Dam</a>
+              </div>
+              </div>
+       </div>
+              </div>
+              
+              
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+         <img src="imagenes/Panda-icon.png" width="38" height="38">
+<h4>Aplicacion Dos, Sebastian Rodriguez Cabrera</h4>
+            </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+              <h1>Animales Terrestres</h1>
+            </div>
+            <div data-role="content" align="center">
+              <div>
+                <h2>Animales de tierra</h2>
+<p>Los animales terrestres son animales que viven totalmente en la tierra, a diferencia de los animales acuáticos, que viven totalmente en el agua
+</p>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/caballo.jpg',1)"><img src="imagenes/Ardilla.jpg" width="60%" height="50%" id="Image26"></a>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/cerdoa.jpg" alt="cerdoa" title="cerdoa" id="wows1_0"/></li>
+		<li><img src="data1/images/leon.jpg" alt="leon" title="leon" id="wows1_1"/></li>
+		<li><img src="data1/images/ardilla.jpg" alt="Ardilla" title="Ardilla" id="wows1_2"/></li>
+		<li><img src="data1/images/tigres.jpg" alt="tigres" title="tigres" id="wows1_3"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/panda.jpg" alt="http://wowslider.net/" title="panda" id="wows1_4"/></a></li>
+		<li><img src="data1/images/oso.jpg" alt="oso" title="oso" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cerdoa"><span><img src="data1/tooltips/cerdoa.jpg" alt="cerdoa"/>1</span></a>
+		<a href="#" title="leon"><span><img src="data1/tooltips/leon.jpg" alt="leon"/>2</span></a>
+		<a href="#" title="Ardilla"><span><img src="data1/tooltips/ardilla.jpg" alt="Ardilla"/>3</span></a>
+		<a href="#" title="tigres"><span><img src="data1/tooltips/tigres.jpg" alt="tigres"/>4</span></a>
+		<a href="#" title="panda"><span><img src="data1/tooltips/panda.jpg" alt="panda"/>5</span></a>
+		<a href="#" title="oso"><span><img src="data1/tooltips/oso.jpg" alt="oso"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+         
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>Pulsa aqui para ver un video</h1>
+             <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.youtube.com/watch?v=PHX447PmPF4" data-role="button" id="beep" target="_self">
+    <h2>ver Video</h2>
+   </a>
+  </li>
+</ul>
+</div>
+              </div>
+         
+                
+<div class="ui-content" align="center">
+  <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.infoanimales.com/los-animales-terrestres" data-role="button" id="beep" target="_self">
+    <h2>Mas Infomarmacion</h2>
+   </a>
+  </li>
+</ul>
+</div>
+
+           </div>
+              </div>
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed">
+               <h4>Aplicacion Dos, Sebastian Rodriguez Cabrera</h4>
+            </div>
+          </div>
+          
+          
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+              <h1>Animales Acuaticos</h1>
+            </div>
+            <div data-role="content" align="center">
+              <div>
+                <h2>Animales de agua</h2>
+<p>Se le llaman animales marinos a todos aquellos animales que viven en las aguas del mar, toda su vida o al menos gran parte de ella. 
+</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/delfina.jpg',1)"><img src="imagenes/caballito.jpg" width="50%" height="50%" id="Image27"></a>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/caballo_de_mar.jpg" alt="caballo de mar" title="caballo de mar" id="wows2_0"/></li>
+		<li><img src="data2/images/cangreji.jpg" alt="cangreji" title="cangreji" id="wows2_1"/></li>
+		<li><img src="data2/images/delfina.jpg" alt="delfina" title="delfina" id="wows2_2"/></li>
+		<li><img src="data2/images/medusa.png" alt="medusa" title="medusa" id="wows2_3"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/nemo.jpg" alt="bootstrap slider" title="nemo" id="wows2_4"/></a></li>
+		<li><img src="data2/images/orca.jpg" alt="orca" title="orca" id="wows2_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="caballo de mar"><span><img src="data2/tooltips/caballo_de_mar.jpg" alt="caballo de mar"/>1</span></a>
+		<a href="#" title="cangreji"><span><img src="data2/tooltips/cangreji.jpg" alt="cangreji"/>2</span></a>
+		<a href="#" title="delfina"><span><img src="data2/tooltips/delfina.jpg" alt="delfina"/>3</span></a>
+		<a href="#" title="medusa"><span><img src="data2/tooltips/medusa.png" alt="medusa"/>4</span></a>
+		<a href="#" title="nemo"><span><img src="data2/tooltips/nemo.jpg" alt="nemo"/>5</span></a>
+		<a href="#" title="orca"><span><img src="data2/tooltips/orca.jpg" alt="orca"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<div data-role="collapsible" data-content-theme="false">
+             <h1>Pulsa aqui para ver un video</h1>
+             <div style="width:60%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.youtube.com/watch?v=1RbzyguxgCo" data-role="button" id="beep" target="_self">
+    <h2>ver Video</h2>
+   </a>
+  </li>
+</ul>
+</div>
+              </div>
+
+
+
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://animalesde.net/acuaticos/" data-role="button" id="beep" target="_self">
+    <h2>Mas Infomarmacion</h2>
+   </a>
+  </li>
+</ul>
+</div>
+
+     </div>
+              </div>
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed">
+               <h4>Aplicacion Dos, Sebastian Rodriguez Cabrera</h4>
+            </div>
+          </div>
+            
+            
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+              <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                 <h1>Imagenes de animales terrestres</h1>
+              </div>
+            <div data-role="content" align="center">
+              <div>
+                 <h2>Terrestres
+</h2>
+                <img src="imagenes/gallinaa.jpg" width="30%" height="50%" alt=""/><img src="imagenes/gorilaa.jpg" width="30%" height="50%" alt=""/><img src="imagenes/jirafaa.jpg" width="30%" height="70%" alt=""/><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/lobos.jpg',1)"><img src="imagenes/leon.jpg" alt="" width="45%" height="50%" id="Image36"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/llamas.jpg',1)"><img src="imagenes/tigres.jpg" alt="" width="45%" height="50%" id="Image37"></a>
+<div data-role="collapsible" data-content-theme="false">
+        <h2>Descripcion</h2>
+             <p>La mayoria de estos animales viven siempre en la tierra ,pocos son los que se meten en el agua</p>
+              </div>
+                
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/search?q=animales+terrestres&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwjqhdDI2e_UAhVB2yYKHaAqAdoQ_AUIBigB&biw=1920&bih=944" data-role="button" id="beep" target="_self">
+    <h2>Mas Infomarmacion</h2>
+   </a>
+  </li>
+</ul>
+</div>
+
+ </div>
+                 
+               </div>
+            </div>
+            <div data-role="footer" data-theme="a" data-position="fixed">
+               <h4>Aplicacion Dos,Sebastian Rodriguez Cabrera</h4>
+              </div>
+              </div>
+              
+              
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+                 <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+                     <h1>Imagenes de animales marinos</h1>
+                 </div>
+                 <div data-role="content" align="center">
+                   <div>
+                      <h2>Marinos</h2>
+                     <img src="imagenes/foca.jpg" width="30%" height="55%" alt=""/><img src="imagenes/nemo.jpg" width="30%" height="50%" alt=""/><img src="imagenes/pez voladora.jpg" width="30%" height="50%" alt=""/><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','imagenes/orca1.jpg',1)"><img src="imagenes/orca.jpg" alt="" width="45%" height="50%" id="Image38"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image39','','imagenes/tiburon1.jpg',1)"><img src="imagenes/tiburon.jpg" alt="" width="45%" height="50%" id="Image39"></a>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:70%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/search?q=animales+terrestres&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwjqhdDI2e_UAhVB2yYKHaAqAdoQ_AUIBigB&biw=1920&bih=944#tbm=isch&q=animales+acuaticos" data-role="button" id="beep" target="_self">
+    <h2>Mas Infomarmacion</h2>
+   </a>
+  </li>
+</ul>
+ </div>
+</div>
+
+                      
+                   </div>
+                 </div>
+                              
+
+                 <div data-role="footer" data-theme="a" data-position="fixed">
+                    <h4>Aplicacion Dos, Sebastian Rodriguez Cabrera</h4>
+                 </div>
+                 </div>
+</body>
+</html>
